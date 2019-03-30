@@ -1,0 +1,15 @@
+tree("Root")
+	fallback
+		tree("Patrol")
+		tree("Attack")
+
+
+tree("Patrol")
+	Sequence
+		GetRandomPositionAndMove
+		CheckForDestinationReach
+
+tree("Attack")
+	Sequence
+		DetectIntruder
+		AttackIntruder
